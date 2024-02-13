@@ -6,7 +6,7 @@ const page = () => {
   return (
     <main>
       <HeroSection/>
-      <div className='mt-80'></div>
+      <div className='mt-40'></div>
       <SubjectCategory/>
     </main>
   )
