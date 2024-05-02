@@ -1,0 +1,2 @@
+-> create admin page
+-> add delete video option
