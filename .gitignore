@@ -38,3 +38,7 @@ next-env.d.ts
 
 # extra files
 /NOTES.txt
+
+
+# database file
+/pages/Components/dbcon.js
