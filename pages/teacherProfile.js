@@ -74,7 +74,7 @@ const page = () => {
                             h3.textContent = element.subject
 
                             const p = document.createElement('p')
-                            p.textContent = (parseFloat(element.rating) / parseFloat(element.rating_quantity)).toFixed(1);
+                            p.textContent = (parseFloat(element.rating) / parseFloat(element.no_of_ratings)).toFixed(1);
                             p.textContent += '⭐'
 
                             div.appendChild(h3)

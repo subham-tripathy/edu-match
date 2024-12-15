@@ -8,11 +8,11 @@ export default function handler(req, res) {
     // } else {
     let ratingg
     let ratingg_quantity
-    con.query('select rating, rating_quantity from rating where name = "' + tid + '" and subject = "' + sub + '"', (err, result) => {
+    con.query('select rating, no_of_ratings from rating where name = "' + tid + '" and subject = "' + sub + '"', (err, result) => {
         result = result[0]
         ratingg = parseFloat(result.rating) + parseFloat(rating)
-        ratingg_quantity = parseInt(result.rating_quantity) + 1
-        con.query('UPDATE rating SET rating = ' + ratingg + ', rating_quantity = ' + ratingg_quantity + ' WHERE subject = "' + sub + '" AND name = "' + tid + '"', (err, result) => {
+        ratingg_quantity = parseInt(result.no_of_ratings) + 1
+        con.query('UPDATE rating SET rating = ' + ratingg + ', no_of_ratings = ' + ratingg_quantity + ' WHERE subject = "' + sub + '" AND name = "' + tid + '"', (err, result) => {
             if (err) {
                 console.log(err)
             }

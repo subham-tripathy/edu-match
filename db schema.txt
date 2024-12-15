@@ -1,0 +1,24 @@
+the below can be used in postgresql. i have used cockroachdb
+
+CREATE TABLE rating (
+  tid varchar(30) DEFAULT NULL,
+  subject text DEFAULT NULL,
+  rating decimal(1,1) DEFAULT NULL,
+  no_of_ratings INT DEFAULT NULL
+);  
+
+
+CREATE TABLE users (
+  name text DEFAULT NULL,
+  id varchar(30) NOT NULL,
+  type varchar(7) DEFAULT NULL,
+  password text DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+
+CREATE TABLE videos (
+  tid varchar(30) DEFAULT NULL,
+  video_name text DEFAULT NULL,
+  video bytea DEFAULT NULL
+);

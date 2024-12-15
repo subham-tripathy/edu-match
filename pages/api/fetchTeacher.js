@@ -7,7 +7,7 @@ export default function handler(req, res) {
         })
     }
     else {
-        con.query('select * from rating where subject = "' + sub + '" order by rating', (err, result, fields) => {
+        con.query(`select * from rating where subject = '${sub}' order by rating`, (err, result, fields) => {
             res.send(result)
         })
     }
