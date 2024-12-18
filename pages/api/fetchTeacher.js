@@ -1,4 +1,4 @@
-import con from "../Components/dbcon"
+import con from "./dbcon"
 export default function handler(req, res) {
     const { sub } = req.query
     if (sub === 'all') {

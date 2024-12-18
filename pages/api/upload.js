@@ -1,6 +1,6 @@
 import multer from "multer";
 import fs from "fs";
-import con from "../Components/dbcon";
+import con from "./dbcon";
 
 const upload = multer({
   storage: multer.diskStorage({

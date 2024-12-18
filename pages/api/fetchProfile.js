@@ -1,4 +1,4 @@
-import con from "../Components/dbcon";
+import con from "./dbcon";
 
 export default function handler(req, res) {
     con.query(`select * from users where id = '${req.query.id}'`, (err, result, fields) => {

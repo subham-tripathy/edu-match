@@ -1,4 +1,4 @@
-import con from "../Components/dbcon";
+import con from "./dbcon";
 
 function isEmpty(obj) {
     for (const prop in obj) {
