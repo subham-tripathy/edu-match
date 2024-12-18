@@ -6,6 +6,9 @@ const con = new Client({
     database: process.env.DB_DBNAME,
     password: process.env.DB_PW,
     port: process.env.DB_PORT,
+    ssl: {
+        rejectUnauthorized: false,
+    },
 });
 
 con.connect()
