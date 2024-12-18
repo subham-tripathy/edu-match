@@ -4,7 +4,10 @@ import con from "./dbcon";
 
 const upload = multer({
   storage: multer.diskStorage({
-    destination: "./public/uploads/",
+    destination: function (req, file, cb) {
+    // Use /tmp as the writable directory
+    cb(null, '/tmp');  // Vercel allows writing to /tmp
+  },
     filename: (req, file, cb) => {
       cb(null, file.originalname);
     },
