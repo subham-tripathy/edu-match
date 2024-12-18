@@ -5,8 +5,7 @@ CREATE TABLE rating (
   subject text DEFAULT NULL,
   rating decimal(1,1) DEFAULT NULL,
   no_of_ratings INT DEFAULT NULL
-);  
-
+);
 
 CREATE TABLE users (
   name text DEFAULT NULL,
