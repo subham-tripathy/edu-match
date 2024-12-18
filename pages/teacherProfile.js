@@ -22,7 +22,7 @@ const page = () => {
             const id = param.get('tid')
             setId(param.get('tid'))
             fetch('/api/fetchTeacherProfile?id=' + id).then(res => res.json()).then(data => {
-                data = data[0]
+                data = data.rows[0]
                 document.querySelector('#name').textContent = ' ' + data.name
                 document.querySelector('#id').textContent = ' ' + data.uid
                 document.querySelector('#type').textContent = ' ' + data.type
