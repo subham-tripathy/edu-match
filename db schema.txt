@@ -1,5 +1,3 @@
-the below can be used in postgresql. i have used cockroachdb
-
 CREATE TABLE rating (
   tid varchar(30) DEFAULT NULL,
   subject text DEFAULT NULL,
@@ -15,9 +13,8 @@ CREATE TABLE users (
   PRIMARY KEY (id)
 );
 
-
 CREATE TABLE videos (
-  tid varchar(30) DEFAULT NULL,
-  video_name text DEFAULT NULL,
-  video bytea DEFAULT NULL
+  tid VARCHAR(30) DEFAULT NULL,
+  video_name TEXT DEFAULT NULL,
+  video LONGBLOB DEFAULT NULL
 );

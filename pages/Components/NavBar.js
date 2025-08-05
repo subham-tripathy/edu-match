@@ -68,8 +68,12 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='flex items-center justify-between bg-blue-500 py-4 px-10 shadow-md shadow-slate-700 text-white mb-5 max-md:hidden'>
-        <Link href={'/'}><h1 className='font-bold text-4xl text-shadow hover:text-teal-400'>EduMatch</h1></Link>
+      <nav
+        className='flex items-center justify-between bg-blue-500 py-4 px-10 shadow-md shadow-slate-700 text-white mb-5 max-md:hidden
+      dark:bg-[#1F2833]'>
+        <Link href={'/'}><h1
+          className='font-bold text-4xl text-shadow'>
+          EduMatch</h1></Link>
         {
           emuser ?
             (
@@ -83,22 +87,28 @@ const NavBar = () => {
             :
             (null)
         }
-        <ul className='flex space-x-10 font-semibold text-lg'>
-          <li><Link href={'/'} className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm'>Home</Link></li>
+        <ul className='flex space-x-3 font-semibold text-lg'>
+          <li><Link href={'/'} className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm
+          border-2 border-transparent dark:hover:bg-blue-500 dark:hover:shadow-none dark:hover:border-white'
+          >Home</Link></li>
           <li>
             {
               emuser ?
                 (
                   <>
-                    <Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm' href={'/profile'}>Hi, {emuser}</Link>
-                    <Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm' href={'/logout'}>Logout</Link>
+                    <Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm
+                    border-2 border-transparent dark:hover:bg-blue-500 dark:hover:shadow-none dark:hover:border-white' href={'/profile'}>Hi, {emuser}</Link>
+                    <Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm
+                    border-2 border-transparent dark:hover:bg-blue-500 dark:hover:shadow-none dark:hover:border-white' href={'/logout'}>Logout</Link>
                   </>
                 )
                 :
-                (<Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm' href={'/login'}>Sign In</Link>)
+                (<Link className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm
+                  border-2 border-transparent dark:hover:bg-blue-500 dark:hover:shadow-none dark:hover:border-white' href={'/login'}>Sign In</Link>)
             }
           </li>
-          <li><Link href={'/about'} className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm'>About</Link></li>
+          <li><Link href={'/about'} className='px-3 py-2 shado hover:bg-teal-400 shadow-md shadow-transparent hover:shadow-slate-500 rounded-md text-shadow-sm
+          border-2 border-transparent dark:hover:bg-blue-500 dark:hover:shadow-none dark:hover:border-white'>About</Link></li>
         </ul>
       </nav>
 

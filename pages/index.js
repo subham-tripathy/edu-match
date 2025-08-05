@@ -5,7 +5,7 @@ import NavBar from './Components/NavBar'
 
 
 const page = () => {
-  const [emuser, setTbuser] = useState('')
+  const [emuser, setEMuser] = useState('')
   useEffect(() => {
     function getCookie(name) {
       const cookieString = document.cookie;
@@ -19,7 +19,7 @@ const page = () => {
     }
     const emuser = getCookie('emuser');
     if (emuser) {
-      setTbuser(emuser)
+      setEMuser(emuser)
     }
   })
   return (
