@@ -6,3 +6,24 @@ datasource db {
   provider = "mysql"
   url = "mysql://root:subham1010@localhost:3306/edumatch"
 }
+
+model Rating {
+  tid           String @id
+  subject       String
+  rating        Float
+  no_of_ratings Int
+}
+
+model User {
+  id       String @id
+  name     String
+  type     String
+  password String
+}
+
+model Video {
+  id         Int     @id @default(autoincrement())
+  tid        String? @db.VarChar(30)
+  video_name String? @db.Text
+  video      Bytes?  @db.LongBlob
+}
