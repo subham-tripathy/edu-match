@@ -69,7 +69,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className='flex items-center justify-between bg-blue-500 py-4 px-10 shadow-md shadow-slate-700 text-white mb-5 max-md:hidden
+        className='h-[10vh] flex items-center justify-between bg-[rgb(13,77,180,0.7)] px-10 shadow shadow-black text-white max-md:hidden
       dark:bg-[#1F2833]'>
         <Link href={'/'}><h1
           className='font-bold text-4xl text-shadow'>
@@ -121,7 +121,7 @@ const NavBar = () => {
 
 
       {/* NAV FOR MOBILE DEVICES */}
-      <nav className='sm:flex md:hidden bg-blue-500 py-4 px-10 shadow-md shadow-slate-700 text-white mb-5 flex items-center justify-between'>
+      <nav className='sm:flex md:hidden bg-blue-500 py-4 px-10 shadow-sm text-white mb-5 flex items-center justify-between'>
         <div className='w-[90%] flex justify-between items-center'>
           <Link href={'/'}><h1 className='font-bold text-3xl md:text-4xl text-shadow hover:text-teal-400'>EduMatch</h1></Link>
         </div>

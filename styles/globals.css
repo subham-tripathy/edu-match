@@ -3,4 +3,18 @@
 @tailwind utilities;
 
 
-*{transition: .4s;}
+* {
+    transition: .4s;
+}
+
+#heroSection {
+    background-image: url(/pics/hero-bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heroSection>div {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
