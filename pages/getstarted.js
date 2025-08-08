@@ -220,13 +220,13 @@ const getstarted = () => {
                 <br />
                 <div className="flex gap-10 justify-center">
                     <button
-                        className="bg-blue-400 rounded-lg border-2 border-white px-5 py-2 text-2xl font-bold text-white text-shadow"
+                        className="bg-[rgb(13,77,180)] rounded-lg border-2 border-white px-5 py-2 text-2xl font-bold text-white text-shadow"
                         id="teacherBTN"
                     >
                         Teacher
                     </button>
                     <button
-                        className="bg-blue-400 rounded-lg border-2 border-white px-5 py-2 text-2xl font-bold text-white text-shadow"
+                        className="bg-[rgb(13,77,180)] rounded-lg border-2 border-white px-5 py-2 text-2xl font-bold text-white text-shadow"
                         id="studentBTN"
                     >
                         Student
@@ -236,7 +236,7 @@ const getstarted = () => {
 
             <section className="hidden" id="teacherFORM">
                 <div className="p-10">
-                    <form className="flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-slate-400 gap-5 p-10 py-20">
+                    <form className="flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-[rgb(13,77,180)] dark:dark:bg-[rgb(31,40,51)] gap-5 p-10 py-20">
                         <h1 className="text-2xl md:text-5xl text-white font-bold text-shadow mb-5">
                             Teacher's Sign Up
                         </h1>
@@ -245,28 +245,28 @@ const getstarted = () => {
                             type="text"
                             name="name"
                             placeholder="Enter Name"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="teacherId"
                             type="text"
                             name="id"
                             placeholder="Enter User Id"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="teacherPassword"
                             type="password"
                             name="password"
                             placeholder="Enter Password"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="teacherCpassword"
                             type="password"
                             name="cpassword"
                             placeholder="Confirm Password"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <label>Choose your Subjects/Topics</label>
                         <div
@@ -276,14 +276,14 @@ const getstarted = () => {
                         <button id="addNewSubject">Add New Subject</button>
                         <Link
                             href={"/login"}
-                            className="font-semibold hover:bg-yellow-400 px-3 py-1 rounded"
+                            className="font-semibold px-3 py-1 rounded"
                         >
                             Have an Account?
                         </Link>
                         <button
                             type="submit"
                             id="teacherFormSubmit"
-                            className="shadow shadow-black text-base md:text-lg bg-blue-400 px-4 py-1.5 rounded-md font-bold hover:bg-blue-500"
+                            className="text-white shadow shadow-black text-base md:text-lg bg-[rgb(13,77,180)] px-4 py-1.5 rounded-md font-bold"
                         >
                             Sign Up
                         </button>
@@ -293,7 +293,7 @@ const getstarted = () => {
 
             <section className="hidden" id="studentFORM">
                 <div className="p-10">
-                    <form className="flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-slate-400 gap-5 p-10 py-20">
+                    <form className="flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-[rgb(13,77,180)] dark:dark:bg-[rgb(31,40,51)] gap-5 p-10 py-20">
                         <h1 className="text-2xl md:text-5xl text-white font-bold text-shadow mb-5">
                             Student's Sign Up
                         </h1>
@@ -302,28 +302,28 @@ const getstarted = () => {
                             type="text"
                             name="name"
                             placeholder="Enter Name"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="studentId"
                             type="text"
                             name="id"
                             placeholder="Enter User Id"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="studentPassword"
                             type="password"
                             name="password"
                             placeholder="Enter Password"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <input
                             id="studentCpassword"
                             type="password"
                             name="cpassword"
                             placeholder="Confirm Password"
-                            className="shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
+                            className="dark:bg-[rgb(31,40,51)] shadow shadow-black border-2 w-[90%] md:w-80 p-2 pl-3"
                         />
                         <Link href={"/login"} className="font-semibold">
                             Have an Account?
@@ -331,7 +331,7 @@ const getstarted = () => {
                         <button
                             type="submit"
                             id="studentFormSubmit"
-                            className="shadow shadow-black text-base md:text-lg bg-blue-400 px-4 py-1.5 rounded-md font-bold hover:bg-blue-500"
+                            className="text-white shadow shadow-black text-base md:text-lg bg-[rgb(13,77,180)] px-4 py-1.5 rounded-md font-bold"
                         >
                             Sign Up
                         </button>

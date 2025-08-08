@@ -23,16 +23,9 @@ const page = () => {
       const submitBTN = document.querySelector('#submit')
       submitBTN.addEventListener('click', (e) => {
         e.preventDefault()
-
-
-
-
-
         const id = document.querySelector('#id').value
         const password = document.querySelector('#password').value
         let url = '/api/login?id=' + id + '&password=' + password
-
-
         fetch(url).then(res => res.json()).then((data) => {
           if (data.msg === 'login success') {
             alert('Successfully Logged In')
@@ -53,11 +46,12 @@ const page = () => {
     <>
       <Navbar />
       <div className='p-10'>
-        <form className='flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-blue-500 gap-5 p-10 py-20'>
-          <input type="text" id='id' name='id' placeholder='Enter User Id' className='shadow shadow-black rounded border-2 w-[90%] md:w-80 p-1 md:p-2 pl-2 md:pl-3' />
-          <input type="password" id='password' name='password' placeholder='Enter Password' className='shadow shadow-black rounded border-2 w-[90%] md:w-80 p-1 md:p-2 pl-2 md:pl-3' />
-          <Link href={'/getstarted'} className='font-semibold text-sm md:text-base md:hover:bg-yellow-400 px-3 py-1 rounded'>Dont have an Account?</Link>
-          <button type="submit" id="submit" className='shadow-md shadow-black text-base md:text-lg bg-teal-400 px-4 py-1.5 rounded-md font-bold hover:bg-yellow-400'>Login</button>
+        <form className='flex flex-col items-center w-[95%] md:w-2/3 rounded-md mx-auto shadow-lg shadow-black bg-[rgb(13,77,180)] gap-5 p-10 py-20
+        dark:bg-[rgb(31,40,51)] text-white'>
+          <input type="text" id='id' name='id' placeholder='Enter User Id' className='dark:bg-[rgb(31,40,51,0.1)] shadow shadow-black rounded border-2 w-[90%] md:w-80 p-1 md:p-2 pl-2 md:pl-3' />
+          <input type="password" id='password' name='password' placeholder='Enter Password' className='dark:bg-[rgb(31,40,51,1)] shadow shadow-black rounded border-2 w-[90%] md:w-80 p-1 md:p-2 pl-2 md:pl-3' />
+          <Link href={'/getstarted'} className='font-semibold text-sm md:text-base px-3 py-1 rounded'>Dont have an Account?</Link>
+          <button type="submit" id="submit" className='shadow-md shadow-black text-base md:text-lg bg-[rgb(13,77,180)] px-4 py-1.5 rounded-md font-bold'>Login</button>
         </form>
       </div>
     </>
